@@ -1,0 +1,16 @@
+<div class="search-container">
+  <div class="search-box">
+    <input type="text" [(ngModel)]="query" (input)="onQueryChange()" placeholder="Search for books...">
+  </div>
+</div>
+
+<div class="results-container">
+  <div *ngIf="loading" class="preloader">
+    Loading Books...
+  </div>
+  <div *ngIf="!loading && query.trim().length >= 3 && books.length === 0" class="no-match">
+    No match for your search.
+  </div>
+  <app-book-list [books]="books" (scrollToBottom)="onScroll()">
+  </app-book-list>
+</div>

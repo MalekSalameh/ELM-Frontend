@@ -1,0 +1,39 @@
+.books-container {
+  display: flex;
+  justify-content: center;
+}
+
+.book-details {
+  width: 70%; 
+  margin-bottom: 20px;
+}
+
+.book-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.book-info {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.book-info h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.book-info p {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.book-info strong {
+  font-weight: bold;
+  color: #007bff;
+}
